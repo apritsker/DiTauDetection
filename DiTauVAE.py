@@ -143,9 +143,4 @@ def evaluate_vae_anomaly(vae,gen_th, reconst_th, test_loader, kl_weight):
     print(cm[0][:] / (cm[0].sum()))
     print(cm[1][:] / (cm[1].sum()))
     print('--------------------')
-    cm = metrics.confusion_matrix(y_true, tot_reconst_pred)
-    print('--------------------')
-    print(cm[0][:] / (cm[0].sum()))
-    print(cm[1][:] / (cm[1].sum()))
-    print('--------------------')
     return y_true, total_general_predictions, tot_reconst_pred

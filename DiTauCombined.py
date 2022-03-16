@@ -16,8 +16,8 @@ class CombinedNet(nn.Module):
     def forward(self, tracks, cell_image):
         x1 = self.deepset(tracks)
         x2 = self.image_cnn(cell_image)
-        x2_flat = torch.flatten(x2)
-        x = torch.cat((x2_flat, x1), dim=1)
+        #x2_flat = torch.flatten(x2)
+        x = torch.cat((x2, x1), dim=1)
         for i in range(len(self.class_layers)):
             x = self.class_layers[i](x)
             if x.shape[0] > 1:
