@@ -44,3 +44,4 @@ VAE training and evaluation + anomaly detection.
 * To run the different modes you need to change the MODE at the beginning of the Main.py file.
 * The file is structured in a way that it may be easily transformed to jupiter notebook or to be separated to functions
 * We attached some already pre-trained networks in NetworkParameters.
+* csv - https://cernbox.cern.ch/index.php/s/y4xhcdH4Xv4SK6n
