@@ -29,7 +29,7 @@ valuable, so we didn't implement big and heavy NN for this.
 DiTauVAE.py - This file has all the routines to train the VAE, the SVMs, evaluate the performance for classic training
 and for anomaly detection.
 
-FocalLoss.py - implemented the focal loss
+FocalLoss.py - Focal loss
 ridnik_asymetric_loss.py - implementation of the ridnik ASL with minor modifications to fit our data. We implemented the
 adaptive losses from scratch in DeepLearningProject.py
 
